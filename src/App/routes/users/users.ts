@@ -107,7 +107,7 @@ let swaggerDetails = {
     })
   },
   detail: {
-    summary: "Obtém uma lista de usuários com campos filtráveis",
+    summary: "Obter uma lista de usuários com campos filtráveis",
     description: "Retorna a quantidade solicitada de usuários mockados de forma dinâmica. Permite especificar quais campos retornar via Query Parameters."
   }
 }
@@ -314,6 +314,8 @@ let userRoutes = new Elysia({
     }
 
     return response
-  }, swaggerDetails)
+  }, 
+  swaggerDetails
+)
 
 export { userRoutes }
